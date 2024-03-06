@@ -15,8 +15,7 @@ class PasswordGeneratorApp:
     def __init__(self, master):
         self.master = master
         master.geometry("600x400")
-        master.iconbitmap("images/logo.ico")
-        master.title("Password Generator")
+        master.title("Random Password Generator")
 
         self.image_path = os.path.join(os.path.dirname(__file__), "images/logo.jpg")
         self.image = ctk.CTkImage(light_image= Image.open(self.image_path),size=(150,50))
