@@ -10,12 +10,13 @@ DISCLAIMER: This tool is *only* for generating random passwords.
 
 # :book: &nbsp; RPG &nbsp; :book:
 This tool using
-os
-customtkinter
-random
-string
-tkinter
-pillow
+* os
+* customtkinter
+* random
+* string
+* tkinter
+* pillow
+* webbrowser
 
 All these libs most be installed to run the program.
 
