@@ -37,14 +37,18 @@ The Random Password Generator Tool is an open-source password generator framewor
 * Mac OS X (experimental)
 
 ## Install via requirements.txt
-
+* download the tool
+* open dir via terminal using (cd) command
 * pip install -r requirements.txt
 * python RPGTool.py
   
 # Windows 🪟
 
 ## Install via requirements.txt
-
+* download the tool
+* install python
+* open dir via powershell using (cd) command
+* locate pip.exe and python.exe
 * pip.exe install -r requirements.txt
 * python.exe RPGTool.py
 
