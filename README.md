@@ -1,4 +1,4 @@
-![image](https://github.com/MSecurity0/Random-Password-Generator/assets/61111442/d91c363f-493a-4b1e-a24d-43174ed2f01b)# :briefcase: &nbsp;  Random Password Generator &nbsp;  :briefcase:
+# :briefcase: &nbsp;  Random Password Generator &nbsp;  :briefcase:
 
 Copyright 2024 Random Password Generator
 
