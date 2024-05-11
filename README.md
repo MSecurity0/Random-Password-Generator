@@ -17,6 +17,7 @@ This tool using
 * tkinter
 * pillow
 * webbrowser
+* math
 
 All these libs most be installed to run the program.
 
