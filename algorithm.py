@@ -7,6 +7,7 @@ from tkinter import messagebox
 from PIL import Image
 from customtkinter import CTkLabel
 import webbrowser
+import math
 
 
 class PasswordGeneratorApp:
@@ -48,6 +49,8 @@ class PasswordGeneratorApp:
         self.generate_button = ctk.CTkButton(master,corner_radius=32, width=400,height=40,text="Generate Password(s)", command=self.generate_passwords)
         self.generate_button.pack(side='top',pady=10)
 
+
+
         self.label_image2 = ctk.CTkLabel(master, text_color='gold',
                                          text="This project Has been made by: Mansour Albader (221110092)")
         self.label_image2.pack(side='top', pady=10)
@@ -61,6 +64,7 @@ class PasswordGeneratorApp:
 
 
     def generate_passwords(self):
+
         sLetters = string.ascii_lowercase
         cLetters = string.ascii_uppercase
         digit = string.digits
@@ -91,7 +95,47 @@ class PasswordGeneratorApp:
                 i += 1
                 if 6 <= length <= 60:
                     password = ''.join(random.choice(characters) for _ in range(length))
-                    passwords.append(str(i)+': '+password+'\n-----------------')
+
+                    def strength(password):
+                        alphabetUpperN = 0
+                        alphabetLowerN = 0
+                        digitN = 0
+                        CharN = 0
+
+                        if any(char.isupper() for char in password):
+                            alphabetUpperN = 26
+
+                        if any(char.islower() for char in password):
+                            alphabetLowerN = 26
+
+                        if any(char.isdigit() for char in password):
+                            digitN = 10
+
+                        if any(char in "!@#$%^&*(),.?\":{}|<>" for char in password):
+                            CharN = 23
+
+                        L = len(password)
+                        R = alphabetLowerN + alphabetUpperN + digitN + CharN
+                        E = int(math.log2(R**L))
+                       
+
+                        level = ""
+                        if (75 <= E >= 100):
+                            level = "strong"
+                        if (50 <= E <= 74):
+                            level = "medium"
+                        if (25 <= E <= 49):
+                            level = "Week"
+                        if (24 <= E <= 0):
+                            level = "Poor"
+                        return level
+
+
+                    passwords.append(str(i)+': '+password+'\n--------('+strength(password)+')--------')
+
+
+
+
 
                 else:
                     s = "password length must be between 6 and 60"
@@ -104,6 +148,8 @@ class PasswordGeneratorApp:
 
         password_str = "\n".join(passwords)
         messagebox.showinfo("Generated Passwords", password_str)
+
+
 
     def openGit(self):
         return webbrowser.open('https://github.com/MSecurity0/Random-Password-Generator')
