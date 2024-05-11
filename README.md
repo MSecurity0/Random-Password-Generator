@@ -41,7 +41,8 @@ All these libs most be installed to run the program.
 | 25-49 | Week Password |
 | 50-74  | Medium Password |
 | 75-100  | Strong Password  |
-res: https://www.baeldung.com/cs/password-entropy
+
+* res: https://www.baeldung.com/cs/password-entropy
 
 ## Supported platforms
 
