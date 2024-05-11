@@ -24,7 +24,14 @@ All these libs most be installed to run the program.
 # :computer: &nbsp; Features &nbsp; :computer:
 
 
-The Random Password Generator Tool is an open-source password generator framework designed for gentaring strong passwords. RPGTool has a number of custom passwords characters that allow you to generate up to 100 password(s).
+* The Random Password Generator Tool is an open-source password generator framework designed for gentaring strong passwords. 
+* RPGTool has a number of custom passwords characters that allow you to generate up to 100 password(s).
+* Check complexity Based on the entropy score
+
+
+# ➕ EntropyScore 🟰
+* E = log_2⁡〖(𝑅^𝐿)〗
+
 
 
 ## Supported platforms
