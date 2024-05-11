@@ -29,11 +29,11 @@ All these libs most be installed to run the program.
 * Check complexity Based on the entropy score
 
 
-# ➕ Entropy Score 🟰
-* E = log_2⁡(𝑅^𝐿)
+# ➕ &nbsp; Entropy Score &nbsp; 🟰
 * E = Entropy
 * R = The range of characters
 * L = The password length 
+* E = log_2⁡(𝑅^𝐿)
   
 ## Supported platforms
 
